@@ -1,0 +1,497 @@
+@charset "utf-8";
+/* CSS Document by mrm.m  for bentonitco.ir*/
+
+/* <---- browser reset */
+
+@media all{
+	
+/* Global reset of paddings and margins for all HTML elements */
+*{  
+	padding:0;
+	margin:0;
+}
+
+/* Correction:margin/padding reset caused too small select boxes. */
+option{
+	padding-left:0.4em;
+}/*LTR*/
+
+select {
+	padding:1px;
+}
+
+/* (en) Global fix of the Italics bugs in IE 5.x and IE 6 */
+* html body *{
+	overflow:visible;
+}
+
+body{
+	background-color:#D7D7D7;
+	background-image:url('img/middle-bg.jpg');
+	font-size:100.01%; /* Fix for rounding errors when scaling font sizes in older versions of Opera browser */
+	color:#000;
+	text-align:right; /* for RTL */
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif; 
+}
+
+div{
+	outline:0 none;
+}
+
+/* HTML 5 - adjusting visual formatting model to block level */
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+	display:block;
+}
+
+/* Clear borders for <fieldset> and <img> elements */
+fieldset, img {
+	border:0 solid;
+}
+
+/* Clear borders/outline for links when you click */
+a:active, a:href, a:hover {
+ border:0 none;
+ outline:0 none;
+}
+
+} 
+
+@media print {
+
+.noprint {
+	display:none !important;
+}
+
+}
+/*  browser reset -----/> */
+
+
+/* <----- major DIVs*/
+div.container{
+	width:980px;
+	min-height:1000px;
+	margin:0 auto;
+	background-color:#f2f2f2;
+}
+div.header{
+	width:auto;
+	min-height:90px;
+	background-image:url('img/middle-bg.jpg');
+	background-repeat:repeat-x;
+	padding-top:1px;
+}
+
+div.major{
+	width:auto;
+	min-height:320px;
+	background-color:#f2f2f2;
+}
+div.contain{
+	width:auto;
+	min-height:250px;
+	background-color:#f2f2f2;
+}
+div.product{
+	width:960px;
+	min-height:280px;
+	padding:1px;
+	background-image:url(img/body-bg.jpg);
+	background-repeat:repeat;
+	margin:10px auto;
+	border-radius:30px;
+	box-shadow:2px 6px 9px #4E4E4E;
+	border:1px solid #f2f2f2; 
+}
+
+div.footer{
+	width:auto;
+	min-height:110px;
+	background-image:url(img/middle-bg.jpg);
+	background-repeat:repeat-x;
+}
+
+div.clear{
+	clear:both !important;
+	width:0px  !important;
+	height:0px !important;
+	display:none !important;	
+}
+ /* major DIVs* -----/>*/
+ 
+/* <----- contain of major div */
+
+div.major div.left_major{
+	width:130px;
+	min-height:320px;
+	float:left;
+}
+
+div.major div.right_major{
+	width:130px;
+	min-height:320px;
+	float:right;
+}
+
+div.major div.main_major{
+	padding-top:1px;
+	margin:0 130px;
+	width:718px;
+	min-height:320px;
+	background-color:#f2f2f2;
+	border-bottom:solid 1px #888888;
+}
+div.major div.top_major{
+	width:auto;
+	height:160px;
+	background-image:url('img/middle-bg.jpg');
+	background-repeat:no-repeat;
+}
+
+div.major div.l_bottom_major{
+	width:auto;
+	height:150px;
+	margin:10px 0 0 10px;
+	border-top:solid 1px #888888;
+	border-right:solid 1px #888888;
+	border-left:solid 1px #888888;
+	-webkit-box-shadow:0px -2px 2px #b6b6b6;
+	-moz-box-shadow:	 0px -2px 2px #b6b6b6;
+	box-shadow:				 0px -2px 2px #b6b6b6;
+	background:-moz-linear-gradient(center top , #6CB8D9 0%, #46A6CE 100%) repeat scroll 0 0 transparent;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#D8DEDE), to(#f2f2f2));
+	background-image: -webkit-linear-gradient(top, #D8DEDE, #f2f2f2);
+	background-image:    -moz-linear-gradient(top, #D8DEDE, #f2f2f2);
+	background-image:     -ms-linear-gradient(top, #D8DEDE, #f2f2f2);
+	background-image:      -o-linear-gradient(top, #D8DEDE, #f2f2f2);
+	background-image:         linear-gradient(top, #D8DEDE, #f2f2f2);
+	/*the white space in background-image: codes  just demonstrated for more classifier */
+
+}
+
+div.major div.r_bottom_major{
+	width:auto;
+	height:150px;
+	margin:10px 10px 0 0;
+	border-top:solid 1px #888888;
+	border-right:solid 1px #888888;
+	border-left:solid 1px #888888;
+	-webkit-box-shadow:0px -2px 2px #b6b6b6;
+	-moz-box-shadow:	 0px -2px 2px #b6b6b6;
+	box-shadow:				 0px -2px 2px #b6b6b6;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#D8DEDE), to(#f2f2f2));
+	background-image: -webkit-linear-gradient(top, #D8DEDE, #f2f2f2);
+	background-image:    -moz-linear-gradient(top, #D8DEDE, #f2f2f2);
+	background-image:     -ms-linear-gradient(top, #D8DEDE, #f2f2f2);
+	background-image:      -o-linear-gradient(top, #D8DEDE, #f2f2f2);
+	background-image:         linear-gradient(top, #D8DEDE, #f2f2f2);
+	/*the white space in background-image: codes  just demonstrated for more classifier */
+}
+
+div.major div.main_major div.t_shadow{
+	width:700px;
+	height:300px;
+	margin:8px auto;
+	border:solid 1px #888888;
+	-webkit-box-shadow:2px 1px 5px 3px #b6b6b6;
+	-moz-box-shadow: 	 2px 1px 5px 3px #b6b6b6;
+	box-shadow:				 2px 1px 5px 3px #b6b6b6;
+	-webkit-border-radius:8px;
+	-khtml-border-radius: 8px;
+	-moz-border-radius:   8px;
+	-o-border-radius:     8px;
+	border-radius:        8px;
+}
+div.major div.main_major div.b_shadow{
+	width:700px;
+	height:300px;
+	-webkit-box-shadow:-2px -1px 5px 3px #b6b6b6;
+	-moz-box-shadow: 	 -2px -1px 5px 3px #b6b6b6;
+	box-shadow:				 -2px -1px 5px 3px #b6b6b6;
+	-webkit-border-radius:8px;
+	-khtml-border-radius: 8px;
+	-moz-border-radius:   8px;
+	-o-border-radius:     8px;
+	border-radius:        8px;
+}
+ /* contain of major div -----/>*/
+	
+ /*<----- contain of product div */
+ 
+div.product div.order{
+	width:200px;
+	height:200px; 
+	float:left;
+	margin:30px 8px;
+	border:1px solid #496C00;
+	background-color:#3C4A64;
+	text-align:center;
+	-webkit-border-radius:110px;
+	-khtml-border-radius: 110px;
+	-moz-border-radius:   110px;
+	-o-border-radius:     110px;
+	border-radius:        110px;
+}
+div.product div.last{
+	float:none;/* this is for stay End of div.linkslidshow inside div.imglink */
+	margin-left :auto;
+	margin-right:30px;
+}
+
+div.product div.in_order{
+	width:180px;
+	height:180px;
+	margin:10px auto;
+	border:1px solid #2C3578;
+	background-color:#f2f2f2;
+	-webkit-border-radius:100px;
+	-khtml-border-radius: 100px;
+	-moz-border-radius:   100px;
+	-o-border-radius:     100px;
+	border-radius:        100px;
+
+	
+}
+div.product ul {
+	text-decoration:none;
+}
+
+
+div.product ul li {
+	text-align:center;
+	list-style-type:none;
+	float:left;
+	width:200px;
+	height:200px;
+	text-align:center;
+	margin:5px 20px;
+}
+
+div.product ul li:hover div.order{
+	width:215px;
+	height:215px;
+	background-color:#5E97D7;
+	box-shadow:-1px 2px 7px 3px #b6b6b6;
+}
+
+div.product ul li:hover div.in_order{
+	width:195px;
+	height:195px; 
+}
+
+div.product ul li div.botton{
+	width:180px;
+	height:180px;
+	text-align:center;
+	-khtml-border-radius: 100px;
+	-webkit-border-radius:100px;
+	-moz-border-radius:		100px;
+	-o-border-radius:			100px;
+	border-radius:				100px;
+	visibility:hidden;
+	opacity:0;
+}
+
+div.product ul li:hover div.botton{
+	visibility:visible;
+	opacity:1;
+}
+
+div.product ul li div.in_order a.info_button{
+	margin-top:120px;
+	margin-left:14px;
+	text-align:center;
+	-webkit-border-radius:5px;
+	-khtml-border-radius: 5px;
+	-moz-border-radius:   5px;
+	-o-border-radius:     5px;
+	border-radius:        5px;
+  color: #FDFDFF;
+  font-size:15px;
+  padding:5px 12px 4px;
+  text-shadow: 0 1px 1px rgba(0, 0, 2, 0.3);
+	display:inline-block;
+	background:-moz-linear-gradient(center top , #8FD6F8 0%, #3C5786 100%) repeat scroll 0 0 transparent;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#8FD6F8), to(#3C5786));
+	background-image: -webkit-linear-gradient(top, #8FD6F8, #3C5786);
+	background-image:    -moz-linear-gradient(top, #6CB8D9, #46A6CE);
+	background-image:     -ms-linear-gradient(top, #6CB8D9, #46A6CE);
+	background-image:      -o-linear-gradient(top, #6CB8D9, #46A6CE);
+	background-image:         linear-gradient(top, #6CB8D9, #46A6CE);
+	/*the white space in background-image: codes  just demonstrated for more classifier */
+  border-bottom: 1px solid #3E8EB0;
+	text-decoration:none;
+}
+
+div.product ul li div.in_order a.info_button:hover{
+	text-shadow:2px 1px 1px #AD7E1F;
+	color:#E0E0E0;
+	padding:6px 14px 5px;
+	border-bottom:1px solid #00071D;
+
+}
+/* contain of product div -----/>*/
+
+/* -----< contain of contain div */
+
+div.contain div.border_contain{
+	margin:0 10px 10px;
+	border-bottom:1px solid #888888;
+	-webkit-border-radius:20px;
+	-khtml-border-radius: 20px;
+	-moz-border-radius:   20px;
+	-o-border-radius:			20px;
+	border-radius:				20px;
+	box-shadow: 			   0 5px 5px #888888;
+	-moz-box-shadow:     0 5px 5px #888888;
+	-webkit-box-shadow:0px 5px 5px #888888;
+	background-color: #D8DEDE;
+}
+
+div.contain div.in_contain{
+	border-right: 1px solid #888888;
+	border-left:	1px solid #888888;
+	margin-bottom:13px;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#D8DEDE));
+	background-image: -webkit-linear-gradient(top, #f2f2f2, #D8DEDE);
+	background-image:    -moz-linear-gradient(top, #f2f2f2, #D8DEDE);
+	background-image:     -ms-linear-gradient(top, #f2f2f2, #D8DEDE);
+	background-image:      -o-linear-gradient(top, #f2f2f2, #D8DEDE);
+	background-image:         linear-gradient(top, #f2f2f2, #D8DEDE);
+	/*the white space in background-image: codes  just demonstrated for more classifier */
+}
+
+div.contain div.left_contain{
+	width:120px;
+	min-height:250px;
+	float:left;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#D8DEDE));
+	background-image: -webkit-linear-gradient(top, #f2f2f2, #D8DEDE);
+	background-image:    -moz-linear-gradient(top, #f2f2f2, #D8DEDE);
+	background-image:     -ms-linear-gradient(top, #f2f2f2, #D8DEDE);
+	background-image:      -o-linear-gradient(top, #f2f2f2, #D8DEDE);
+	background-image:         linear-gradient(top, #f2f2f2, #D8DEDE);
+	/*the white space in background-image: codes  just demonstrated for more classifier */
+}
+
+div.contain div.right_contain{
+	width:120px;
+	min-height:250px;
+	float:right;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#D8DEDE));
+	background-image: -webkit-linear-gradient(top, #f2f2f2, #D8DEDE);
+	background-image:    -moz-linear-gradient(top, #f2f2f2, #D8DEDE);
+	background-image:     -ms-linear-gradient(top, #f2f2f2, #D8DEDE);
+	background-image:      -o-linear-gradient(top, #f2f2f2, #D8DEDE);
+	background-image:         linear-gradient(top, #f2f2f2, #D8DEDE);
+	/*the white space in background-image: codes  just demonstrated for more classifier */
+}
+
+div.contain div.main_contain{
+	width:720px;
+	min-height:250px;
+	margin:0 130px;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#D8DEDE));
+	background-image: -webkit-linear-gradient(top, #f2f2f2, #D8DEDE);
+	background-image:    -moz-linear-gradient(top, #f2f2f2, #D8DEDE);
+	background-image:     -ms-linear-gradient(top, #f2f2f2, #D8DEDE);
+	background-image:      -o-linear-gradient(top, #f2f2f2, #D8DEDE);
+	background-image:         linear-gradient(top, #f2f2f2, #D8DEDE);
+	/*the white space in background-image: codes  just demonstrated for more classifier */
+}
+/*contain of contain div /> ----- */
+
+/* ----- < Start of contain of footer */
+
+div.footer div.footer_contain{
+	width:300px;
+	margin-right:auto;
+	margin-left: auto;
+	color:#b6b6b6;
+	font-size:12px;
+	text-align:center; 
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif; 
+}
+
+div.footer ul{
+	list-style-type:none;
+
+}
+
+div.footer ul li {
+	float:left;
+	display:block;
+	text-align:center;
+	font-size:13px;
+	margin:5px 10px;
+	padding-left:10px;
+	border-left:solid 1px #B6B6B6;
+}
+
+div.footer ul li:first-child {
+		border:none;
+	
+}
+div.footer a{
+	color:#f2f2f2;
+	text-decoration:none;
+}
+
+div.footer a:hover{
+	color:#5E97D7;	
+}
+
+/* ----- End of contain of footer />*/
+
+/* <start of header contain of menu div and logo div ----- */
+div.header div.logo{
+	width:400px;
+	height:80px;
+	margin-left:580px;
+
+}
+div.header div.menu{
+	width:580px;
+	height:80px;
+	float:left;
+}
+
+div.header div.menu ul{
+	margin:20px 5px;
+	list-style:none;
+	float:left;
+}
+
+div.header div.menu ul li{
+	display:block;
+	float:right;
+	margin:5px 15px;
+	text-align:left;
+	direction:ltr;
+}
+
+div.header div.menu ul li a{
+	display:block;
+	color:#A2A2A2;
+	text-align:center;
+	text-decoration:none;
+	padding:4px 10px 3px;
+	font-size:17px;
+}
+
+div.header div.menu ul li:hover{
+	border-bottom:1px solid #F9B81F;
+	border-radius:4px;
+	
+}
+
+div.header div.menu ul li a:hover{
+	color:#F9B81F;
+		
+}
+
+div.header div.logo h2{
+	color:#f2f2f2;
+	text-align:right;
+	padding:30px 30px;
+}
+/* <The End of header contain of menu div and logo div ----- */
