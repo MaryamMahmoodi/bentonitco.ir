@@ -98,7 +98,9 @@ div.product{
 	background-image:url(img/body-bg.jpg);
 	background-repeat:repeat;
 	margin:10px auto;
-	border-radius:30px;
+	border-radius:				30px;
+	-moz-border-radius:	 30px;
+	-webkit-border-radius:30px;
 	box-shadow:2px 6px 9px #4E4E4E;
 	border:1px solid #f2f2f2; 
 }
@@ -260,7 +262,7 @@ div.product ul li {
 	text-align:center;
 	list-style-type:none;
 	float:left;
-	width:200px;
+	width: 200px;
 	height:200px;
 	text-align:center;
 	margin:5px 20px;
@@ -275,17 +277,20 @@ div.product ul li:hover div.order{
 
 div.product ul li:hover div.in_order{
 	width:195px;
-	height:195px; 
+	height:195px;
+	background-image:url('img/bentonite1.jpg'); 
+	background-repeat:no-repeat;
+	background-position:center;
 }
 
 div.product ul li div.botton{
 	width:180px;
 	height:180px;
 	text-align:center;
-	-khtml-border-radius: 100px;
 	-webkit-border-radius:100px;
-	-moz-border-radius:		100px;
-	-o-border-radius:			100px;
+	-khtml-border-radius: 100px;
+	-moz-border-radius:	 100px;
+	-o-border-radius:		 100px;
 	border-radius:				100px;
 	visibility:hidden;
 	opacity:0;
@@ -308,25 +313,25 @@ div.product ul li div.in_order a.info_button{
   color: #FDFDFF;
   font-size:15px;
   padding:5px 12px 4px;
-  text-shadow: 0 1px 1px rgba(0, 0, 2, 0.3);
+  text-shadow:0 1px 1px rgba(0, 0, 2, 0.3);
 	display:inline-block;
 	background:-moz-linear-gradient(center top , #8FD6F8 0%, #3C5786 100%) repeat scroll 0 0 transparent;
 	background-image: -webkit-gradient(linear, left top, left bottom, from(#8FD6F8), to(#3C5786));
 	background-image: -webkit-linear-gradient(top, #8FD6F8, #3C5786);
-	background-image:    -moz-linear-gradient(top, #6CB8D9, #46A6CE);
-	background-image:     -ms-linear-gradient(top, #6CB8D9, #46A6CE);
-	background-image:      -o-linear-gradient(top, #6CB8D9, #46A6CE);
-	background-image:         linear-gradient(top, #6CB8D9, #46A6CE);
+	background-image:    -moz-linear-gradient(top, #8FD6F8, #3C5786);
+	background-image:     -ms-linear-gradient(top, #8FD6F8, #3C5786);
+	background-image:      -o-linear-gradient(top, #8FD6F8, #3C5786);
+	background-image:         linear-gradient(top, #8FD6F8, #3C5786);
 	/*the white space in background-image: codes  just demonstrated for more classifier */
   border-bottom: 1px solid #3E8EB0;
 	text-decoration:none;
 }
 
 div.product ul li div.in_order a.info_button:hover{
-	text-shadow:2px 1px 1px #AD7E1F;
 	color:#E0E0E0;
 	padding:6px 14px 5px;
 	border-bottom:1px solid #00071D;
+	text-shadow:2px 1px 1px #AD7E1F;
 
 }
 /* contain of product div -----/>*/
@@ -339,11 +344,11 @@ div.contain div.border_contain{
 	-webkit-border-radius:20px;
 	-khtml-border-radius: 20px;
 	-moz-border-radius:   20px;
-	-o-border-radius:			20px;
+	-o-border-radius:		 20px;
 	border-radius:				20px;
-	box-shadow: 			   0 5px 5px #888888;
-	-moz-box-shadow:     0 5px 5px #888888;
-	-webkit-box-shadow:0px 5px 5px #888888;
+	box-shadow: 			  	 0 5px 5px #888888;
+	-moz-box-shadow:   	  0 5px 5px #888888;
+	-webkit-box-shadow:	 0 5px 5px #888888;
 	background-color: #D8DEDE;
 }
 
@@ -404,8 +409,7 @@ div.contain div.main_contain{
 
 div.footer div.footer_contain{
 	width:300px;
-	margin-right:auto;
-	margin-left: auto;
+	margin:0 auto;
 	color:#b6b6b6;
 	font-size:12px;
 	text-align:center; 
